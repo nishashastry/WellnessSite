@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head class>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+      @import url('https://fonts.googleapis.com/css?family=Lobster');
+    </style>
+  </head>
+  <body style="background-color: #D3B6EA; margin:0;">
+    <script src="script.js"></script>
+
+    <nav class="navBar"> 
+      <div class="navCenter">
+        <!-- <container style="display:flex; justify-content:flex-start;"> -->
+            <a href = "index.html" style= "text-decoration: none;">
+              
+              <span class="logoText" style="vertical-align: middle; font-family: 'Lobster',cursive;"> Mind&Soul </span>
+            </a>
+        </container>
+        <container class="linkFlex">
+          <!-- <container style="display:flex; justify-content:flex-start;">
+            <img src="th.jfif" class="logo">
+          </container> -->
+          <container>
+            <a class="navLink" href="generator.html">wellness casino</a>
+            <a class="navLink" href="journal.html">journal</a>
+            <a class="navLink" href="calendar2.html">mood calendar</a>
+          </container>
+        </container>
+      </div>
+    </nav>
+    
+
+<div style="display:flex; justify-content: center;"class="center">
+  <img style="height: 100px; width: auto;"src="butterflies.gif">
+ <h6 class="welcomeFlex" style="display: flex; justify-content: center; font-family: 'Courier Prime', monospace; font-size: 40px;"> online journal </h6>
+ <img style="height: 100px; width: auto;"src="butterflies.gif">
+ </div>
+  <p class="center" style="text-align: center; font-family: 'Courier Prime', monospace; font-size: 18px;"> Do you ever feel like you have nobody to vent to? Look no further, for your online journal will keep your secrets. </p>
+
+<h6 class="wtr" style= "margin-left: 15%;"> can't figure out what to write? ▶</h6> 
+    <div id= "toggleDiv" class="center, wtrBefore" style="cursor: pointer;">
+      <div class="center" style="display: flex; justify-content: center, space-between;"> 
+        <div> 
+          <h6 style="font-size: 17px;"> use a journal prompt: </h6>
+          <ul style="margin-right: 10%;">
+            <p class="prompts">- What is your ideal day?</p>
+            <p class="prompts">- What are your goals for the week? Month? Year?</p>
+            <p class="prompts">- What are moments that you love about life?</p>
+            <p class="prompts">- Last thing that made you smile</p>
+          </ul>
+        </div>
+
+        <div> 
+          <h6 style="font-size: 17px;"> share your thoughts on current events: </h6>
+          <ul>
+            <p><a href="https://www.nytimes.com/spotlight/learning-current-events"> NY times current events </a> </p>
+            <p><a href="https://www.loe.org/"> environmental news </a> </p>
+            <p><a href="https://libguides.umflint.edu/topics/current"> general current events </a> </p>
+
+          </ul>
+        </div>
+
+      </div>
+    </div>
+    <div class="center">
+      <div style="padding-top:5px;" class="boxTop">
+        entry#<a id="entryNum">0</a>
+      </div>
+<!-- <div class="center">
+ <div id="myDIV" class="header">
+  <input type="text" id="myInput" placeholder="start writing...">
+  <span style="margin-top: 15px;" onclick="newElement()" class="addBtn">done ></span>
+</div>
+</div> -->
+<div class="center">
+ <div id="myDIV" class="header">
+  <textarea type="text" id="myInput" placeholder="start writing..."></textarea>
+  <span style="margin-top: 15px;" onclick="newElement()" class="addBtn">done ></span>
+</div>
+</div>
+
+<ul id="myUL">
+  
+</ul> 
+  </div>
+  </body>
+</ul>
+
+<script src="journal.js"></script>
+</html>

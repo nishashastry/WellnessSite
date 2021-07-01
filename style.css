@@ -1,0 +1,324 @@
+.navBar{
+  border-bottom: 2px black solid;
+  background-color:#ADEEF6;
+  padding-top: 20px;
+}
+.navLink{
+  margin-left: 15px;
+  margin-top: 10px;
+  transition: 0.3s;
+  font-size:22px;
+  color: black;
+  vertical-align: middle;
+  text-decoration: none;
+  
+}
+.logoText{
+  font-size: 35px;
+  color: black;
+  vertical-align: middle;
+  text-decoration: none;
+  font-family: 'Homemade Apple', cursive;
+  margin-left: -80px;/*used to be 15px*/
+  margin-top: 10px;
+}
+a{
+
+  text-decoration: none;
+}
+.navCenter{
+  margin-left: 200px;
+  margin-right:50px;
+  /*used to be 200px*/
+}
+.linkFlex{
+  display: flex;
+  justify-content:flex-end;
+  align-items: flex-start;
+  margin-left: 500px;
+  margin-top: -26px;
+  margin-bottom:20px;
+}
+.center{
+  margin-left: 200px;
+  margin-right: 200px;
+}
+.welcomeFlex{
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.boxTop{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  border: 1.5px solid black;
+  height: 32px;
+  margin-top: 12px;
+}
+.boxBottom{
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  border-left: 1.5px solid black;
+  border-right: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+  height: 32px;
+}
+form {
+  margin: 0 auto;
+  border-right: 0.5px solid black;
+  border-left: 0.5px solid black;
+  border-bottom: 0.5px solid black;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+ul {list-style-type: none;}
+body {font-family: 'Courier Prime';}
+
+.month {
+ /* padding: 70px 25px; */
+ width: 100%;
+ background-color: #ADEEF6;
+ text-align: center;
+}
+ 
+/* Month list */
+.month ul {
+ margin: 0;
+ padding: 0;
+}
+ 
+ul li {
+ 
+ font-size: 20px;
+ text-transform: lowercase;
+ letter-spacing: 3px;
+}
+ 
+/* Previous button inside month header */
+.month .prev {
+ float: left;
+ padding-top: 10px;
+}
+ 
+/* Next button */
+.month .next {
+ float: right;
+ padding-top: 10px;
+}
+ 
+/* Weekdays (Mon-Sun) */
+.weekdays {
+ margin: 0;
+ padding: 10px 0;
+ background-color:#ddd;
+}
+ 
+.weekdays li {
+ display: inline-block;
+ width: 13.6%;
+ color: #666;
+ text-align: center;
+}
+ 
+/* Days (1-31) */
+.days {
+ padding: 10px 0;
+ background: white;
+ margin: 0;
+}
+ 
+.days li {
+ list-style-type: none;
+ display: inline-block;
+ width: 13.6%;
+ height: 62px;
+ text-align: center;
+ margin-bottom: 5px;
+ font-size: 23px;
+ color: #777;
+}
+ 
+/* Highlight the "current" day */
+.days li .active {
+ padding: 5px;
+ background: #ffffff00;
+ color: #ffffff00; important
+}
+
+/*journal page*/
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 19px 31px 12px 40px;
+  background: rgba(172, 237, 246, 0.72);
+  font-size: 18px;
+  transition: 0.2s;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+ul li:nth-child(odd) {
+  background: #ffffff00;
+}
+
+/* ul li:hover {
+  background: #ddd;
+} */
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.header {
+  background-color: #ffffff00;
+  /* padding: 30px 40px; */
+  color: black;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+textarea {
+  border: none;
+  resize: none;
+  border-radius: 0;
+
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  border-left: 1.5px solid black;
+  border-right: 1.5px solid black;
+  border-bottom: 1.5px solid black;
+
+  width: 1104px;
+  height: 300px;
+}
+.calendarCenter{
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.addBtn {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 25%;
+  background: white;
+  color: black;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 0.5px solid black;
+}
+
+.addBtn:hover {
+  background-color:rgba(172, 237, 246, 0.72);
+}
+.prompts{
+  background-color: #ffffff00;
+  font-family: 'Courier Prime';
+  font-size: 16px;
+  text-transform: lowercase;
+}
+.wtrBefore{
+  display: none;
+}
+.wtrAfter{
+  display: block;
+}
+.wtr{
+  display:inline; font-size: 18px; margin-bottom: 12px;
+}
+.testing{
+  display: none;
+}
+
+ .wtr:hover {
+  color: white;
+  transition: 0.4s;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+   list-style-type: none;
+ width: 13.6%;
+ height: 62px;
+ text-align: center;
+ margin-bottom: 5px;
+ font-size: 23px;
+ background-color: #f9f9f9;
+ transition: all 0s ease 1s; 
+}
+.dropdown-content {
+  /* display: none; */
+   visibility: hidden;
+   margin-top: 0;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+   /* opacity: 0;
+  transition: visibility 0s, opacity 0.5s linear; */
+}
+.dropdown-content .emotion {
+  color: black;
+  text-decoration: none;
+}
+/* .dropdown-content .emotion:hover {background-color: #ddd; } */
+.dropdown:hover .dropdown-content {visibility:visible;   opacity: 1;}
+
+.dropdown-content:hover .dropdown-content {visibility: visible;}
+
+.happyButton{
+  background-color: yellow;
+  border:0.5px black solid;
+  font-family: 'Courier Prime';
+}
+
+.sadButton{
+  background-color: blue;
+  border:0.5px black solid;
+  font-family: 'Courier Prime';
+}

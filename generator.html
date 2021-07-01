@@ -1,0 +1,151 @@
+<html>
+
+<head class>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>repl.it</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap');
+		@import url('https://fonts.googleapis.com/css?family=Lobster');
+	</style>
+  
+	<link href="style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="generator.css">
+
+
+</head>
+
+<nav class="navBar">
+	<div class="navCenter">
+		<!-- <container style="display:flex; justify-content:flex-start;"> -->
+		<a href="index.html" style="text-decoration: none;">
+
+			<span class="logoText" style="font-family: 'Lobster',cursive;"> Mind&Soul </span>
+            </a>
+        </container>
+        <container class="linkFlex">
+          <!-- <container style="display:flex; justify-content:flex-start;">
+            <img src="th.jfif" class="logo">
+          </container> -->
+          <container>
+            <a class="navLink" href="generator.html">wellness casino</a>
+            <a class="navLink" href="journal.html">journal</a>
+            <a class="navLink" href="calendar2.html">mood calendar</a>
+          </container>
+        </container>
+      </div>
+</nav>
+<!------------------------------EMOJIS-------------->
+<div style= "display: flex; justify-content: center; font-size:80px;margin-top:50px">How Are You Feeling Today?</div>
+<div class="moods" style= "display: flex; justify-content: center;">
+  <script>
+      var x = document.getElementById("quoteGen");
+      var y = document.getElementById("songGen");
+      var z = document.getElementById("activityGen");
+      var a = document.getElementById("bookGen");
+
+      function clear(){
+            
+
+            var generators = [x,y,z,a];
+            for(var i = 0; i < generators.length;i++){
+              if(generators[i].style.display != "none"){
+                generators[i].style.display = "none";
+              }
+            }  
+      }
+      
+  </script>
+
+      <img class = "emoji" id ="happy" src="happyEmoji.png" onclick="clear(), quoteDisplay(), songDisplay()" style="height: 170px">
+      <img class = "emoji" id = "sad" src="sadEmoji.png" onclick="clear(),quoteDisplay(), songDisplay(), activityDisplay()">
+      <img class = "emoji" id ="mad" src="madEmoji.png" onclick="clear(),quoteDisplay(), activityDisplay(), songDisplay()">
+      <img class = "emoji" id ="stressed" src="stressEmoji.png" onclick="clear(), quoteDisplay(), songDisplay()">
+      <img class = "emoji" id ="relaxed" src="relaxedEmoji.png" onclick="clear(),quoteDisplay()">
+
+    
+</div>
+
+<body style="background-color: #D3B6EA; margin:0;">
+	<script src="script.js">
+
+	</script>
+  
+<!---------------------------------- Quotes------------------>
+	<body>
+		<div class="quoteBox" id ="quoteGen">
+      <h1 style="text-align: center;font-size:40px">Quote of the Day</h1>
+       <br>
+			<i class="fas fa-quote-left"></i>
+        <h2 class="quote" style = "color: black; font-style: italic" ></h2>
+        <hr>
+        <p class="author"></p>
+        <div class="buttons">
+            <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Merry%20Christmas" data-size="large" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i>Tweet</a>
+            <button class="next">Next</button>
+
+        </div>
+    </div>
+    
+   
+    <script src="generator.js"></script>
+  </body>
+<!---------------------------------- SONGS------------------>
+  <body>
+ 
+    <div class="quoteBox"id ="songGen">
+       <h1 style="text-align: center;font-size:40px">Have Fun, Let Loose, and Listen To...</h1>
+       <br>
+        <i class="fas fa-quote-left"></i>
+        <h2 class="songTitle"></h2>
+        <hr>
+        <p class="songArtist"></p>
+        <div class="buttons">
+            <a class="twitter-share-button" href="https://open.spotify.com/" data-size="large" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i>Open Spotify</a>
+        </div>
+        
+    </div>
+   
+    <script src="songGenerator.js"></script>
+</body>
+
+<!---------------------------------- Activity------------------>
+<body>
+ 
+    <div class="quoteBox" id ="activityGen">
+       <h1 style="text-align: center;font-size:40px">Activity Suggestion</h1>
+       <br>
+        <i class="fas fa-quote-left"></i>
+        <h2 class="activityTitle" style="text-align:center"></h2>
+        <hr>
+        <div class="buttons">
+            
+        </div>
+        
+    </div>
+   
+    <script src="activityGenerator.js"></script>
+</body>
+<!---------------------------------- Books------------------>
+<body>
+ 
+    <div class="quoteBox" id ="bookGen">
+       <h1 style="text-align: center;font-size:40px">Add to Your Reading List!</h1>
+       <br>
+        <i class="fas fa-quote-left"></i>
+        <h2 class="bookTitle"></h2>
+        <hr>
+        <p class="bookAuthor"></p>
+        <div class="buttons">
+            
+        </div>
+        
+    </div>
+   
+    <script src="bookGenerator.js"></script>
+</body>
+
+
+</html>
+
+<!--"display: flex;align-items: center;justify-content: center;height: 100vh;background-color: #ADEEF6"-->
